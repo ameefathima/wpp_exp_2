@@ -1,0 +1,322 @@
+/* Remove default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: #1e3de8;
+    color: white;
+    padding: 22px 50px;
+
+    /* Flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Company Logo */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Navigation hover effect */
+nav a:hover {
+    color: #1f94ed;
+}
+
+
+/* =========================
+   MAIN CONTENT
+   ========================= */
+
+main {
+    min-height: 500px;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+
+/* Main page headings */
+main > h1 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    color: #1e3de8;
+}
+
+
+/* =========================
+   HOME / HERO SECTION
+   ========================= */
+
+.hero {
+    padding: 110px 20px;
+    background-color: #abc0f3;
+    border-radius: 10px;
+}
+
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #1e3de8;
+}
+
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+
+/* Button */
+.button {
+    display: inline-block;
+    background-color: #1e3de8;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+.button:hover {
+    background-color: #2b38ef;
+}
+
+
+/* =========================
+   SERVICES
+   ========================= */
+
+.service-container {
+    /* CSS Grid */
+    display: grid;
+
+    /* Three equal columns */
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+    margin-top: 35px;
+}
+
+
+.service-box {
+    background-color: white;
+    padding: 35px;
+    border-radius: 10px;
+
+    /* Violet border */
+    border: 2px solid #1e3de8;
+
+    /* Shadow */
+    box-shadow: 0 4px 10px rgba(106, 13, 173, 0.15);
+}
+
+
+.service-box h2 {
+    margin-bottom: 18px;
+    color: #1e3de8;
+    font-size: 25px;
+}
+
+
+.service-box p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   ABOUT
+   ========================= */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+
+.about-content h1 {
+    margin-bottom: 30px;
+    color: #1e3de8;
+    font-size: 38px;
+}
+
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 19px;
+}
+
+
+/* =========================
+   CONTACT
+   ========================= */
+
+.contact-info {
+    margin-top: 35px;
+}
+
+
+.contact-info p {
+    margin: 20px;
+    font-size: 19px;
+}
+
+
+.contact-info strong {
+    color: #1e3de8;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #1e3de8;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+footer p {
+    margin: 8px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* Header becomes vertical */
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 22px;
+    }
+
+
+    /* Logo */
+    .logo {
+        font-size: 26px;
+    }
+
+
+    /* Navigation becomes vertical */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+
+    nav a {
+        font-size: 18px;
+    }
+
+
+    /* Main */
+    main {
+        padding: 40px 20px;
+    }
+
+
+    /* Smaller headings */
+    main > h1 {
+        font-size: 32px;
+    }
+
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+
+    .hero p {
+        font-size: 19px;
+    }
+
+
+    /* Services become one column */
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-box h2 {
+        font-size: 23px;
+    }
+
+
+    .service-box p {
+        font-size: 17px;
+    }
+
+
+    /* About */
+    .about-content h1 {
+        font-size: 32px;
+    }
+
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+
+    /* Contact */
+    .contact-info p {
+        font-size: 18px;
+    }
+
+
+    /* Footer */
+    footer p {
+        font-size: 16px;
+    }
+
+}
